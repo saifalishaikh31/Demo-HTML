@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>CodePen - Demo Flexbox 3</title>
+    <style>
+      body{ padding: 2em; }
+      
+    .headerContainer{
+      display: flex;
+      flex-flow: column wrap;
+      align-content: center;
+      background: tomato;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .footerContainer{
+      display: flex;
+      flex-flow: column wrap;
+      align-content: center;
+      background: lightgreen;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .mainContainer{
+      display: flex;
+      flex-flow: row wrap;
+      align-content: center;
+      font-weight: bold;
+    }
+
+    
+    .mainContentItem{
+      text-align: left;
+      background: deepskyblue;
+    }
+    .article{
+      padding: 10px;
+      margin: 10px;
+      background: aqua;
+    }
+    .sideBarLeftItem { background: gold;}
+    .sideBarRightItem { background: hotpink;}
+
+    .sideBarItem { flex: 1 0 0; border: 0px solid green;}
+    .center { text-align: center;}
+    .mainContentItem { flex: 3 0px;}
+    .sideBarLeftItem {order: 1;}
+    .mainContentItem {order: 2;}
+    .sideBarRightItem { order: 3;}
+
+
+    </style>
+    
+  </head>
+  <body>
+    <header class="headerContainer"><h1>HEADER - Sample FlexBox Example</h1></header>
+    <div class="mainContainer">
+      <section class="mainContentItem">
+        <article class="article">
+          <h2>First Article:</h2>
+          Cricket is a bat-and-ball game played between two teams
+          of eleven players each on a field at the centre of which
+          is a 22-yard (20-metre) pitch with a wicket at each end,
+          each comprising two bails balanced on three stumps.
+      </article>
+      <article class="article">
+        <h2>Second Article:</h2>
+          The game proceeds when a player on the fielding team, called the bowler,
+          "bowls" (propels) the ball from one end of the pitch towards the wicket at the other end,
+          with an "over" being completed once they have legally done so six times. 
+    </article>
+    <article class="article">
+        <h2>Third Article:</h2>
+          The batting side has one player at each end of the pitch, 
+          with the player at the opposite end of the pitch from the bowler aiming to strike the ball with a bat.
+          The batting side scores runs either when the ball reaches the boundary of the field,
+          or when the two batters swap ends of the pitch, which results in one run. 
+          The fielding side's aim is to prevent run-scoring and dismiss each batter 
+          (so they are "out", and are said to have "lost their wicket"). 
+          Means of dismissal include being bowled, when the bowled ball hits the stumps and dislodges the bails, 
+          and by the fielding side either catching a hit ball before it touches the ground,
+          or hitting a wicket with the ball before a batter can cross the crease line in front of the wicket to complete a run. 
+          When ten batters have been dismissed, the innings ends and the teams swap roles. 
+          The game is adjudicated by two umpires, aided by a third umpire and match referee in international matches.
+    </article>
+      </section>
+      <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+      <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+    </div>
+    <footer class="footerContainer">Footer</footer>
+  </body>
+</html>

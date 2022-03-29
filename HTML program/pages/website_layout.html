@@ -1,0 +1,59 @@
+<!doctype html>
+<title>Website Layout</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .col-1 {
+    background: #D7E8D4;
+    flex: 1;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content > article {
+    flex: 3;
+    min-height: 60vh;
+  }
+  .content > aside {
+    background: beige;
+    flex: 1;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+<body>
+  <nav class="col-1">Nav</nav>
+  <div class="col-2">
+  	<header>Header</header>
+    <main class="content">
+    <article>Article
+        <p>
+          Cricket is a bat-and-ball game played between two teams
+          of eleven players each on a field at the centre of which
+          is a 22-yard (20-metre) pitch with a wicket at each end,
+          each comprising two bails balanced on three stumps.
+        </p>
+    </article>
+    <aside>Aside</aside>
+    </main>
+  	<footer>Footer</footer>
+  </div>
+</body>
